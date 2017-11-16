@@ -35,11 +35,15 @@ Partial Class Form1
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.lblMessage = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblGrade = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.lblGrade)
         Me.GroupBox1.Controls.Add(Me.lblAverage)
         Me.GroupBox1.Controls.Add(Me.txtScore3)
         Me.GroupBox1.Controls.Add(Me.txtScore2)
@@ -48,12 +52,12 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(27, 25)
+        Me.GroupBox1.Location = New System.Drawing.Point(26, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(271, 171)
+        Me.GroupBox1.Size = New System.Drawing.Size(265, 201)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.GroupBox1.Text = "Enter Three Test Scores"
         '
         'lblAverage
         '
@@ -150,11 +154,29 @@ Partial Class Form1
         '
         'lblMessage
         '
-        Me.lblMessage.Location = New System.Drawing.Point(60, 210)
+        Me.lblMessage.Location = New System.Drawing.Point(93, 216)
         Me.lblMessage.Name = "lblMessage"
         Me.lblMessage.Size = New System.Drawing.Size(174, 16)
         Me.lblMessage.TabIndex = 13
         Me.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(25, 174)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Grade:"
+        '
+        'lblGrade
+        '
+        Me.lblGrade.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblGrade.Location = New System.Drawing.Point(107, 169)
+        Me.lblGrade.Name = "lblGrade"
+        Me.lblGrade.Size = New System.Drawing.Size(100, 23)
+        Me.lblGrade.TabIndex = 7
+        Me.lblGrade.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
@@ -166,8 +188,9 @@ Partial Class Form1
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Test Score Average"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -186,5 +209,7 @@ Partial Class Form1
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents btnCalculate As System.Windows.Forms.Button
     Friend WithEvents lblMessage As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblGrade As System.Windows.Forms.Label
 
 End Class

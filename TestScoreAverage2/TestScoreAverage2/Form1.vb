@@ -11,8 +11,22 @@
             dblAverage = (dblScore1 + dblScore2 + dblScore3) / NUM_SCORES
             lblAverage.Text = dblAverage.ToString("n2")
 
+            If dblAverage < 60 Then
+                lblGrade.Text = "F"
+            ElseIf dblAverage < 70 Then
+                lblGrade.Text = "D"
+            ElseIf dblAverage < 80 Then
+                lblGrade.Text = "C"
+            ElseIf dblAverage < 90 Then
+                lblGrade.Text = "B"
+            ElseIf dblAverage <= 100 Then
+                lblGrade.Text = "A"
+            End If
+
             If dblAverage > dblHIGH_SCORE Then
                 lblMessage.Text = "Congratulations! Great Job!"
+            Else
+                lblMessage.Text = "Keep trying!"
             End If
         Catch
             lblMessage.Text = "Error: Scores must be numeric."
@@ -27,6 +41,7 @@
         txtScore3.Clear()
         lblAverage.Text = String.Empty
         lblMessage.Text = String.Empty
+        lblGrade.Text = String.Empty
         txtScore1.Focus()
     End Sub
 
