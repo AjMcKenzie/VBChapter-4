@@ -27,6 +27,7 @@
         txtScore3.Clear()
         lblAverage.Text = String.Empty
         lblMessage.Text = String.Empty
+        txtScore1.Focus()
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
