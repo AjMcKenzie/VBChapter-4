@@ -27,7 +27,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.lblRate = New System.Windows.Forms.Label()
+        Me.lblCommisionRate = New System.Windows.Forms.Label()
         Me.lblCommission = New System.Windows.Forms.Label()
         Me.lblNetPay = New System.Windows.Forms.Label()
         Me.lblMessage = New System.Windows.Forms.Label()
@@ -83,14 +83,14 @@ Partial Class Form1
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Net Pay:"
         '
-        'lblRate
+        'lblCommisionRate
         '
-        Me.lblRate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lblRate.Location = New System.Drawing.Point(141, 94)
-        Me.lblRate.Name = "lblRate"
-        Me.lblRate.Size = New System.Drawing.Size(101, 18)
-        Me.lblRate.TabIndex = 5
-        Me.lblRate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblCommisionRate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblCommisionRate.Location = New System.Drawing.Point(141, 94)
+        Me.lblCommisionRate.Name = "lblCommisionRate"
+        Me.lblCommisionRate.Size = New System.Drawing.Size(101, 18)
+        Me.lblCommisionRate.TabIndex = 5
+        Me.lblCommisionRate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblCommission
         '
@@ -173,7 +173,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.lblNetPay)
         Me.Controls.Add(Me.lblCommission)
-        Me.Controls.Add(Me.lblRate)
+        Me.Controls.Add(Me.lblCommisionRate)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -190,7 +190,7 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents lblRate As System.Windows.Forms.Label
+    Friend WithEvents lblCommisionRate As System.Windows.Forms.Label
     Friend WithEvents lblCommission As System.Windows.Forms.Label
     Friend WithEvents lblNetPay As System.Windows.Forms.Label
     Friend WithEvents lblMessage As System.Windows.Forms.Label

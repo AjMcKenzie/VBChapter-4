@@ -21,6 +21,11 @@
                 Case Is >= 22000
                     decCommissionRate = 0.15D
             End Select
+            decCommissionAmount = decSalesAmount * decCommissionRate
+            decNetPay = decCommissionAmount - decAdvacePayAmount
+
+            lblCommisionRate.Text = decCommissionRate.ToString("P")
+
         Catch
 
         End Try
