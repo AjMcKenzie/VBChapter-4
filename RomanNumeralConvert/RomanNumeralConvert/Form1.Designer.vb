@@ -30,6 +30,7 @@ Partial Class Form1
         Me.btnExit = New System.Windows.Forms.Button()
         Me.txtUserInteger = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,7 +65,7 @@ Partial Class Form1
         '
         'lblMessage
         '
-        Me.lblMessage.Location = New System.Drawing.Point(12, 158)
+        Me.lblMessage.Location = New System.Drawing.Point(9, 138)
         Me.lblMessage.Name = "lblMessage"
         Me.lblMessage.Size = New System.Drawing.Size(273, 20)
         Me.lblMessage.TabIndex = 3
@@ -72,19 +73,19 @@ Partial Class Form1
         '
         'btnConvert
         '
-        Me.btnConvert.Location = New System.Drawing.Point(52, 112)
+        Me.btnConvert.Location = New System.Drawing.Point(27, 112)
         Me.btnConvert.Name = "btnConvert"
         Me.btnConvert.Size = New System.Drawing.Size(75, 23)
-        Me.btnConvert.TabIndex = 4
+        Me.btnConvert.TabIndex = 0
         Me.btnConvert.Text = "Convert"
         Me.btnConvert.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(158, 112)
+        Me.btnExit.Location = New System.Drawing.Point(190, 112)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 5
+        Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
@@ -107,11 +108,21 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(108, 112)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 1
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(297, 187)
+        Me.ClientSize = New System.Drawing.Size(297, 166)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnConvert)
@@ -131,5 +142,6 @@ Partial Class Form1
     Friend WithEvents btnExit As System.Windows.Forms.Button
     Friend WithEvents txtUserInteger As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnClear As System.Windows.Forms.Button
 
 End Class
