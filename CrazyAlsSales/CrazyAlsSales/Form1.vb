@@ -25,10 +25,26 @@
             decNetPay = decCommissionAmount - decAdvacePayAmount
 
             lblCommisionRate.Text = decCommissionRate.ToString("P")
+            lblCommission.Text = decCommissionAmount.ToString("c")
+            lblNetPay.Text = decNetPay.ToString("c")
 
         Catch
-
+            lblMessage.Text = "Please enter numeric values."
         End Try
 
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        lblCommisionRate.Text = String.Empty
+        lblCommission.Text = String.Empty
+        lblNetPay.Text = String.Empty
+        lblMessage.Text = String.Empty
+        txtAdvancePay.Clear()
+        txtSalesForMonth.Clear()
+        txtSalesForMonth.Focus()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
     End Sub
 End Class
