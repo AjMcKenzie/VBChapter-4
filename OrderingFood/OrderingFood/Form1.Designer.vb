@@ -24,16 +24,17 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.radHambuger = New System.Windows.Forms.RadioButton()
-        Me.radCheeseBuger = New System.Windows.Forms.RadioButton()
-        Me.radChickenPatty = New System.Windows.Forms.RadioButton()
         Me.radHamandTurkey = New System.Windows.Forms.RadioButton()
-        Me.chkTomato = New System.Windows.Forms.CheckBox()
-        Me.chkLettuce = New System.Windows.Forms.CheckBox()
-        Me.chkMayo = New System.Windows.Forms.CheckBox()
+        Me.radChickenPatty = New System.Windows.Forms.RadioButton()
+        Me.radCheeseBuger = New System.Windows.Forms.RadioButton()
+        Me.radHambuger = New System.Windows.Forms.RadioButton()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.chkPickles = New System.Windows.Forms.CheckBox()
+        Me.chkMayo = New System.Windows.Forms.CheckBox()
+        Me.chkLettuce = New System.Windows.Forms.CheckBox()
+        Me.chkTomato = New System.Windows.Forms.CheckBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.pbFries = New System.Windows.Forms.PictureBox()
         Me.radFries = New System.Windows.Forms.RadioButton()
         Me.radOnionRings = New System.Windows.Forms.RadioButton()
         Me.radChips = New System.Windows.Forms.RadioButton()
@@ -51,10 +52,12 @@ Partial Class Form1
         Me.pbLettuce = New System.Windows.Forms.PictureBox()
         Me.pbMayo = New System.Windows.Forms.PictureBox()
         Me.pbPickles = New System.Windows.Forms.PictureBox()
-        Me.pbFries = New System.Windows.Forms.PictureBox()
+        Me.pbOnionRings = New System.Windows.Forms.PictureBox()
+        Me.pbChips = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.pbFries, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbHambuger, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCheese, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbChicken, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +66,8 @@ Partial Class Form1
         CType(Me.pbLettuce, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbMayo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPickles, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbFries, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbOnionRings, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbChips, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -79,6 +83,50 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select your meal"
         '
+        'radHamandTurkey
+        '
+        Me.radHamandTurkey.AutoSize = True
+        Me.radHamandTurkey.Location = New System.Drawing.Point(6, 134)
+        Me.radHamandTurkey.Name = "radHamandTurkey"
+        Me.radHamandTurkey.Size = New System.Drawing.Size(160, 17)
+        Me.radHamandTurkey.TabIndex = 3
+        Me.radHamandTurkey.TabStop = True
+        Me.radHamandTurkey.Text = "Ham and Turkey Sandwhich"
+        Me.radHamandTurkey.UseVisualStyleBackColor = True
+        '
+        'radChickenPatty
+        '
+        Me.radChickenPatty.AutoSize = True
+        Me.radChickenPatty.Location = New System.Drawing.Point(7, 99)
+        Me.radChickenPatty.Name = "radChickenPatty"
+        Me.radChickenPatty.Size = New System.Drawing.Size(91, 17)
+        Me.radChickenPatty.TabIndex = 2
+        Me.radChickenPatty.TabStop = True
+        Me.radChickenPatty.Text = "Chicken Patty"
+        Me.radChickenPatty.UseVisualStyleBackColor = True
+        '
+        'radCheeseBuger
+        '
+        Me.radCheeseBuger.AutoSize = True
+        Me.radCheeseBuger.Location = New System.Drawing.Point(6, 67)
+        Me.radCheeseBuger.Name = "radCheeseBuger"
+        Me.radCheeseBuger.Size = New System.Drawing.Size(92, 17)
+        Me.radCheeseBuger.TabIndex = 1
+        Me.radCheeseBuger.TabStop = True
+        Me.radCheeseBuger.Text = "Cheese Buger"
+        Me.radCheeseBuger.UseVisualStyleBackColor = True
+        '
+        'radHambuger
+        '
+        Me.radHambuger.AutoSize = True
+        Me.radHambuger.Location = New System.Drawing.Point(7, 35)
+        Me.radHambuger.Name = "radHambuger"
+        Me.radHambuger.Size = New System.Drawing.Size(74, 17)
+        Me.radHambuger.TabIndex = 0
+        Me.radHambuger.TabStop = True
+        Me.radHambuger.Text = "Hambuger"
+        Me.radHambuger.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.chkPickles)
@@ -92,82 +140,15 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Toppings"
         '
-        'GroupBox3
+        'chkPickles
         '
-        Me.GroupBox3.Controls.Add(Me.pbFries)
-        Me.GroupBox3.Controls.Add(Me.radFries)
-        Me.GroupBox3.Controls.Add(Me.radOnionRings)
-        Me.GroupBox3.Controls.Add(Me.radChips)
-        Me.GroupBox3.Location = New System.Drawing.Point(244, 251)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(215, 125)
-        Me.GroupBox3.TabIndex = 2
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Side Order"
-        '
-        'radHambuger
-        '
-        Me.radHambuger.AutoSize = True
-        Me.radHambuger.Location = New System.Drawing.Point(7, 35)
-        Me.radHambuger.Name = "radHambuger"
-        Me.radHambuger.Size = New System.Drawing.Size(74, 17)
-        Me.radHambuger.TabIndex = 0
-        Me.radHambuger.TabStop = True
-        Me.radHambuger.Text = "Hambuger"
-        Me.radHambuger.UseVisualStyleBackColor = True
-        '
-        'radCheeseBuger
-        '
-        Me.radCheeseBuger.AutoSize = True
-        Me.radCheeseBuger.Location = New System.Drawing.Point(6, 67)
-        Me.radCheeseBuger.Name = "radCheeseBuger"
-        Me.radCheeseBuger.Size = New System.Drawing.Size(92, 17)
-        Me.radCheeseBuger.TabIndex = 1
-        Me.radCheeseBuger.TabStop = True
-        Me.radCheeseBuger.Text = "Cheese Buger"
-        Me.radCheeseBuger.UseVisualStyleBackColor = True
-        '
-        'radChickenPatty
-        '
-        Me.radChickenPatty.AutoSize = True
-        Me.radChickenPatty.Location = New System.Drawing.Point(7, 99)
-        Me.radChickenPatty.Name = "radChickenPatty"
-        Me.radChickenPatty.Size = New System.Drawing.Size(91, 17)
-        Me.radChickenPatty.TabIndex = 2
-        Me.radChickenPatty.TabStop = True
-        Me.radChickenPatty.Text = "Chicken Patty"
-        Me.radChickenPatty.UseVisualStyleBackColor = True
-        '
-        'radHamandTurkey
-        '
-        Me.radHamandTurkey.AutoSize = True
-        Me.radHamandTurkey.Location = New System.Drawing.Point(6, 134)
-        Me.radHamandTurkey.Name = "radHamandTurkey"
-        Me.radHamandTurkey.Size = New System.Drawing.Size(160, 17)
-        Me.radHamandTurkey.TabIndex = 3
-        Me.radHamandTurkey.TabStop = True
-        Me.radHamandTurkey.Text = "Ham and Turkey Sandwhich"
-        Me.radHamandTurkey.UseVisualStyleBackColor = True
-        '
-        'chkTomato
-        '
-        Me.chkTomato.AutoSize = True
-        Me.chkTomato.Location = New System.Drawing.Point(6, 35)
-        Me.chkTomato.Name = "chkTomato"
-        Me.chkTomato.Size = New System.Drawing.Size(62, 17)
-        Me.chkTomato.TabIndex = 0
-        Me.chkTomato.Text = "Tomato"
-        Me.chkTomato.UseVisualStyleBackColor = True
-        '
-        'chkLettuce
-        '
-        Me.chkLettuce.AutoSize = True
-        Me.chkLettuce.Location = New System.Drawing.Point(6, 68)
-        Me.chkLettuce.Name = "chkLettuce"
-        Me.chkLettuce.Size = New System.Drawing.Size(62, 17)
-        Me.chkLettuce.TabIndex = 1
-        Me.chkLettuce.Text = "Lettuce"
-        Me.chkLettuce.UseVisualStyleBackColor = True
+        Me.chkPickles.AutoSize = True
+        Me.chkPickles.Location = New System.Drawing.Point(6, 135)
+        Me.chkPickles.Name = "chkPickles"
+        Me.chkPickles.Size = New System.Drawing.Size(60, 17)
+        Me.chkPickles.TabIndex = 3
+        Me.chkPickles.Text = "Pickles"
+        Me.chkPickles.UseVisualStyleBackColor = True
         '
         'chkMayo
         '
@@ -179,15 +160,51 @@ Partial Class Form1
         Me.chkMayo.Text = "Mayo"
         Me.chkMayo.UseVisualStyleBackColor = True
         '
-        'chkPickles
+        'chkLettuce
         '
-        Me.chkPickles.AutoSize = True
-        Me.chkPickles.Location = New System.Drawing.Point(6, 135)
-        Me.chkPickles.Name = "chkPickles"
-        Me.chkPickles.Size = New System.Drawing.Size(60, 17)
-        Me.chkPickles.TabIndex = 3
-        Me.chkPickles.Text = "Pickles"
-        Me.chkPickles.UseVisualStyleBackColor = True
+        Me.chkLettuce.AutoSize = True
+        Me.chkLettuce.Location = New System.Drawing.Point(6, 68)
+        Me.chkLettuce.Name = "chkLettuce"
+        Me.chkLettuce.Size = New System.Drawing.Size(62, 17)
+        Me.chkLettuce.TabIndex = 1
+        Me.chkLettuce.Text = "Lettuce"
+        Me.chkLettuce.UseVisualStyleBackColor = True
+        '
+        'chkTomato
+        '
+        Me.chkTomato.AutoSize = True
+        Me.chkTomato.Location = New System.Drawing.Point(6, 35)
+        Me.chkTomato.Name = "chkTomato"
+        Me.chkTomato.Size = New System.Drawing.Size(62, 17)
+        Me.chkTomato.TabIndex = 0
+        Me.chkTomato.Text = "Tomato"
+        Me.chkTomato.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.pbChips)
+        Me.GroupBox3.Controls.Add(Me.pbOnionRings)
+        Me.GroupBox3.Controls.Add(Me.pbFries)
+        Me.GroupBox3.Controls.Add(Me.radFries)
+        Me.GroupBox3.Controls.Add(Me.radOnionRings)
+        Me.GroupBox3.Controls.Add(Me.radChips)
+        Me.GroupBox3.Location = New System.Drawing.Point(244, 251)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(215, 125)
+        Me.GroupBox3.TabIndex = 2
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Side Order"
+        '
+        'pbFries
+        '
+        Me.pbFries.Image = CType(resources.GetObject("pbFries.Image"), System.Drawing.Image)
+        Me.pbFries.Location = New System.Drawing.Point(95, 19)
+        Me.pbFries.Name = "pbFries"
+        Me.pbFries.Size = New System.Drawing.Size(109, 61)
+        Me.pbFries.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbFries.TabIndex = 17
+        Me.pbFries.TabStop = False
+        Me.pbFries.Visible = False
         '
         'radFries
         '
@@ -364,16 +381,27 @@ Partial Class Form1
         Me.pbPickles.TabStop = False
         Me.pbPickles.Visible = False
         '
-        'pbFries
+        'pbOnionRings
         '
-        Me.pbFries.Image = CType(resources.GetObject("pbFries.Image"), System.Drawing.Image)
-        Me.pbFries.Location = New System.Drawing.Point(95, 19)
-        Me.pbFries.Name = "pbFries"
-        Me.pbFries.Size = New System.Drawing.Size(109, 61)
-        Me.pbFries.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbFries.TabIndex = 17
-        Me.pbFries.TabStop = False
-        Me.pbFries.Visible = False
+        Me.pbOnionRings.Image = CType(resources.GetObject("pbOnionRings.Image"), System.Drawing.Image)
+        Me.pbOnionRings.Location = New System.Drawing.Point(95, 19)
+        Me.pbOnionRings.Name = "pbOnionRings"
+        Me.pbOnionRings.Size = New System.Drawing.Size(109, 61)
+        Me.pbOnionRings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbOnionRings.TabIndex = 18
+        Me.pbOnionRings.TabStop = False
+        Me.pbOnionRings.Visible = False
+        '
+        'pbChips
+        '
+        Me.pbChips.Image = CType(resources.GetObject("pbChips.Image"), System.Drawing.Image)
+        Me.pbChips.Location = New System.Drawing.Point(95, 19)
+        Me.pbChips.Name = "pbChips"
+        Me.pbChips.Size = New System.Drawing.Size(109, 61)
+        Me.pbChips.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbChips.TabIndex = 19
+        Me.pbChips.TabStop = False
+        Me.pbChips.Visible = False
         '
         'Form1
         '
@@ -405,6 +433,7 @@ Partial Class Form1
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.pbFries, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbHambuger, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCheese, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbChicken, System.ComponentModel.ISupportInitialize).EndInit()
@@ -413,7 +442,8 @@ Partial Class Form1
         CType(Me.pbLettuce, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbMayo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPickles, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbFries, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbOnionRings, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbChips, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -447,5 +477,7 @@ Partial Class Form1
     Friend WithEvents pbMayo As System.Windows.Forms.PictureBox
     Friend WithEvents pbPickles As System.Windows.Forms.PictureBox
     Friend WithEvents pbFries As System.Windows.Forms.PictureBox
+    Friend WithEvents pbChips As System.Windows.Forms.PictureBox
+    Friend WithEvents pbOnionRings As System.Windows.Forms.PictureBox
 
 End Class

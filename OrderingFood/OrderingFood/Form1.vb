@@ -85,6 +85,10 @@
         pbMayo.Visible = False
         pbTomato.Visible = False
         pbLettuce.Visible = False
+
+        pbFries.Visible = False
+        pbOnionRings.Visible = False
+        pbChips.Visible = False
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -133,5 +137,23 @@
 
     Private Sub chkPickles_CheckedChanged(sender As Object, e As EventArgs) Handles chkPickles.CheckedChanged
         pbPickles.Visible = True
+    End Sub
+
+    Private Sub radFries_CheckedChanged(sender As Object, e As EventArgs) Handles radFries.CheckedChanged
+        pbFries.Visible = True
+        pbOnionRings.Visible = False
+        pbChips.Visible = False
+    End Sub
+
+    Private Sub radOnionRings_CheckedChanged(sender As Object, e As EventArgs) Handles radOnionRings.CheckedChanged
+        pbFries.Visible = False
+        pbOnionRings.Visible = True
+        pbChips.Visible = False
+    End Sub
+
+    Private Sub radChips_CheckedChanged(sender As Object, e As EventArgs) Handles radChips.CheckedChanged
+        pbFries.Visible = False
+        pbOnionRings.Visible = False
+        pbChips.Visible = True
     End Sub
 End Class
