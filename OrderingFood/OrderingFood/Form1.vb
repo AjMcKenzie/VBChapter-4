@@ -124,19 +124,35 @@
     End Sub
 
     Private Sub chkTomato_CheckedChanged(sender As Object, e As EventArgs) Handles chkTomato.CheckedChanged
-        pbTomato.Visible = True
+        If chkTomato.Checked = True Then
+            pbTomato.Visible = True
+        Else
+            pbTomato.Visible = False
+        End If
     End Sub
 
     Private Sub chkLettuce_CheckedChanged(sender As Object, e As EventArgs) Handles chkLettuce.CheckedChanged
-        pbLettuce.Visible = True
+        If chkLettuce.Checked = True Then
+            pbLettuce.Visible = True
+        Else
+            pbLettuce.Visible = False
+        End If
     End Sub
 
     Private Sub chkMayo_CheckedChanged(sender As Object, e As EventArgs) Handles chkMayo.CheckedChanged
-        pbMayo.Visible = True
+        If chkMayo.Checked = True Then
+            pbMayo.Visible = True
+        Else
+            pbMayo.Visible = False
+        End If
     End Sub
 
     Private Sub chkPickles_CheckedChanged(sender As Object, e As EventArgs) Handles chkPickles.CheckedChanged
-        pbPickles.Visible = True
+        If chkPickles.Checked = True Then
+            pbPickles.Visible = True
+        Else
+            pbPickles.Visible = False
+        End If
     End Sub
 
     Private Sub radFries_CheckedChanged(sender As Object, e As EventArgs) Handles radFries.CheckedChanged

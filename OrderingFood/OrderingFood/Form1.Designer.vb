@@ -34,6 +34,8 @@ Partial Class Form1
         Me.chkLettuce = New System.Windows.Forms.CheckBox()
         Me.chkTomato = New System.Windows.Forms.CheckBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.pbChips = New System.Windows.Forms.PictureBox()
+        Me.pbOnionRings = New System.Windows.Forms.PictureBox()
         Me.pbFries = New System.Windows.Forms.PictureBox()
         Me.radFries = New System.Windows.Forms.RadioButton()
         Me.radOnionRings = New System.Windows.Forms.RadioButton()
@@ -52,11 +54,11 @@ Partial Class Form1
         Me.pbLettuce = New System.Windows.Forms.PictureBox()
         Me.pbMayo = New System.Windows.Forms.PictureBox()
         Me.pbPickles = New System.Windows.Forms.PictureBox()
-        Me.pbOnionRings = New System.Windows.Forms.PictureBox()
-        Me.pbChips = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.pbChips, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbOnionRings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbFries, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbHambuger, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCheese, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,8 +68,6 @@ Partial Class Form1
         CType(Me.pbLettuce, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbMayo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbPickles, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbOnionRings, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbChips, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -194,6 +194,28 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Side Order"
+        '
+        'pbChips
+        '
+        Me.pbChips.Image = CType(resources.GetObject("pbChips.Image"), System.Drawing.Image)
+        Me.pbChips.Location = New System.Drawing.Point(95, 19)
+        Me.pbChips.Name = "pbChips"
+        Me.pbChips.Size = New System.Drawing.Size(109, 61)
+        Me.pbChips.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbChips.TabIndex = 19
+        Me.pbChips.TabStop = False
+        Me.pbChips.Visible = False
+        '
+        'pbOnionRings
+        '
+        Me.pbOnionRings.Image = CType(resources.GetObject("pbOnionRings.Image"), System.Drawing.Image)
+        Me.pbOnionRings.Location = New System.Drawing.Point(95, 19)
+        Me.pbOnionRings.Name = "pbOnionRings"
+        Me.pbOnionRings.Size = New System.Drawing.Size(109, 61)
+        Me.pbOnionRings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbOnionRings.TabIndex = 18
+        Me.pbOnionRings.TabStop = False
+        Me.pbOnionRings.Visible = False
         '
         'pbFries
         '
@@ -340,9 +362,9 @@ Partial Class Form1
         'pbTomato
         '
         Me.pbTomato.Image = CType(resources.GetObject("pbTomato.Image"), System.Drawing.Image)
-        Me.pbTomato.Location = New System.Drawing.Point(196, 134)
+        Me.pbTomato.Location = New System.Drawing.Point(184, 131)
         Me.pbTomato.Name = "pbTomato"
-        Me.pbTomato.Size = New System.Drawing.Size(41, 32)
+        Me.pbTomato.Size = New System.Drawing.Size(53, 37)
         Me.pbTomato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbTomato.TabIndex = 13
         Me.pbTomato.TabStop = False
@@ -351,9 +373,9 @@ Partial Class Form1
         'pbLettuce
         '
         Me.pbLettuce.Image = CType(resources.GetObject("pbLettuce.Image"), System.Drawing.Image)
-        Me.pbLettuce.Location = New System.Drawing.Point(244, 134)
+        Me.pbLettuce.Location = New System.Drawing.Point(299, 131)
         Me.pbLettuce.Name = "pbLettuce"
-        Me.pbLettuce.Size = New System.Drawing.Size(41, 32)
+        Me.pbLettuce.Size = New System.Drawing.Size(57, 35)
         Me.pbLettuce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbLettuce.TabIndex = 14
         Me.pbLettuce.TabStop = False
@@ -362,9 +384,9 @@ Partial Class Form1
         'pbMayo
         '
         Me.pbMayo.Image = CType(resources.GetObject("pbMayo.Image"), System.Drawing.Image)
-        Me.pbMayo.Location = New System.Drawing.Point(292, 134)
+        Me.pbMayo.Location = New System.Drawing.Point(299, 172)
         Me.pbMayo.Name = "pbMayo"
-        Me.pbMayo.Size = New System.Drawing.Size(41, 32)
+        Me.pbMayo.Size = New System.Drawing.Size(57, 35)
         Me.pbMayo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbMayo.TabIndex = 15
         Me.pbMayo.TabStop = False
@@ -373,35 +395,13 @@ Partial Class Form1
         'pbPickles
         '
         Me.pbPickles.Image = CType(resources.GetObject("pbPickles.Image"), System.Drawing.Image)
-        Me.pbPickles.Location = New System.Drawing.Point(244, 175)
+        Me.pbPickles.Location = New System.Drawing.Point(184, 172)
         Me.pbPickles.Name = "pbPickles"
-        Me.pbPickles.Size = New System.Drawing.Size(41, 32)
+        Me.pbPickles.Size = New System.Drawing.Size(53, 38)
         Me.pbPickles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbPickles.TabIndex = 16
         Me.pbPickles.TabStop = False
         Me.pbPickles.Visible = False
-        '
-        'pbOnionRings
-        '
-        Me.pbOnionRings.Image = CType(resources.GetObject("pbOnionRings.Image"), System.Drawing.Image)
-        Me.pbOnionRings.Location = New System.Drawing.Point(95, 19)
-        Me.pbOnionRings.Name = "pbOnionRings"
-        Me.pbOnionRings.Size = New System.Drawing.Size(109, 61)
-        Me.pbOnionRings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbOnionRings.TabIndex = 18
-        Me.pbOnionRings.TabStop = False
-        Me.pbOnionRings.Visible = False
-        '
-        'pbChips
-        '
-        Me.pbChips.Image = CType(resources.GetObject("pbChips.Image"), System.Drawing.Image)
-        Me.pbChips.Location = New System.Drawing.Point(95, 19)
-        Me.pbChips.Name = "pbChips"
-        Me.pbChips.Size = New System.Drawing.Size(109, 61)
-        Me.pbChips.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.pbChips.TabIndex = 19
-        Me.pbChips.TabStop = False
-        Me.pbChips.Visible = False
         '
         'Form1
         '
@@ -433,6 +433,8 @@ Partial Class Form1
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.pbChips, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbOnionRings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbFries, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbHambuger, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCheese, System.ComponentModel.ISupportInitialize).EndInit()
@@ -442,8 +444,6 @@ Partial Class Form1
         CType(Me.pbLettuce, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbMayo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbPickles, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbOnionRings, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbChips, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
