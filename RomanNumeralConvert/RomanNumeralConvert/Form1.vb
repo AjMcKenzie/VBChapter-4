@@ -25,9 +25,11 @@
                 lblConvert.Text = "IX"
             ElseIf intNumber = 10 Then
                 lblConvert.Text = "X"
+            ElseIf intNumber > 10 Then
+                lblMessage.Text = "Make sure it is between 1 and 10."
             End If
         Catch
-            lblMessage.Text = "Make sure it is between 1 and 10."
+            lblMessage.Text = "Make sure you enter a number between 1 and 10."
         End Try
     End Sub
 
