@@ -60,7 +60,7 @@ Partial Class Form1
         '
         'btnInsult
         '
-        Me.btnInsult.Location = New System.Drawing.Point(120, 127)
+        Me.btnInsult.Location = New System.Drawing.Point(144, 137)
         Me.btnInsult.Name = "btnInsult"
         Me.btnInsult.Size = New System.Drawing.Size(75, 23)
         Me.btnInsult.TabIndex = 3
@@ -69,7 +69,7 @@ Partial Class Form1
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(66, 162)
+        Me.btnClear.Location = New System.Drawing.Point(90, 172)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 23)
         Me.btnClear.TabIndex = 4
@@ -78,7 +78,7 @@ Partial Class Form1
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(169, 162)
+        Me.btnExit.Location = New System.Drawing.Point(193, 172)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 5
