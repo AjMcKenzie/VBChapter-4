@@ -99,6 +99,7 @@ Partial Class Form1
         'listBodyPartPlural
         '
         Me.listBodyPartPlural.FormattingEnabled = True
+        Me.listBodyPartPlural.Items.AddRange(New Object() {"Arms", "Legs", "Fingers", "Heads", "Eyes", "Toes", "Feet", "Hands"})
         Me.listBodyPartPlural.Location = New System.Drawing.Point(12, 161)
         Me.listBodyPartPlural.Name = "listBodyPartPlural"
         Me.listBodyPartPlural.Size = New System.Drawing.Size(120, 95)
@@ -116,6 +117,7 @@ Partial Class Form1
         'listAnimal
         '
         Me.listAnimal.FormattingEnabled = True
+        Me.listAnimal.Items.AddRange(New Object() {"Cat", "Fish", "Dog", "Mouse", "Dragon", "Frog", "Turtle", "Bear"})
         Me.listAnimal.Location = New System.Drawing.Point(153, 161)
         Me.listAnimal.Name = "listAnimal"
         Me.listAnimal.Size = New System.Drawing.Size(120, 95)
@@ -124,6 +126,7 @@ Partial Class Form1
         'listNoun
         '
         Me.listNoun.FormattingEnabled = True
+        Me.listNoun.Items.AddRange(New Object() {"Book", "Lightbulb", "Bag", "Flower", "Chair", "Wood", "Chalk", "Door"})
         Me.listNoun.Location = New System.Drawing.Point(294, 161)
         Me.listNoun.Name = "listNoun"
         Me.listNoun.Size = New System.Drawing.Size(120, 95)
@@ -132,6 +135,7 @@ Partial Class Form1
         'listPluralNoun
         '
         Me.listPluralNoun.FormattingEnabled = True
+        Me.listPluralNoun.Items.AddRange(New Object() {"Houses", "Bombs", "Desks", "Trees", "Dogs", "Pants", "Lights", "Pens"})
         Me.listPluralNoun.Location = New System.Drawing.Point(15, 288)
         Me.listPluralNoun.Name = "listPluralNoun"
         Me.listPluralNoun.Size = New System.Drawing.Size(120, 95)
