@@ -4,7 +4,7 @@
         Dim intPassword As Integer = 7829
 
         If txtUserPassword.Text = intPassword Then
-            MessageBox.Show("Correct! Hello!")
+            MessageBox.Show("Correct!")
         Else
             MessageBox.Show("Incorrect!")
         End If
